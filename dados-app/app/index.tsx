@@ -12,8 +12,12 @@ export default function Index() {
   const tirarDado = (nroDado: number) => {
     const numeros = ["⚀","⚁","⚂","⚃","⚄","⚅"];
     const valor = Math.floor(Math.random() * numeros.length);
-    if (nroDado === 1) setNum(numeros[valor]);
-    else setNum2(numeros[valor]);
+    if (nroDado === 1) {
+      setNum(numeros[valor]) 
+    }
+    else {
+      setNum2(numeros[valor]);
+    }
   }
 
   return (
